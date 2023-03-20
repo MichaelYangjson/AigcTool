@@ -3,9 +3,9 @@ import os
 
 
 class ChatApi:
-    models = {"gpt_3.5": "gpt-3.5-turbo"}
+    models = {"gpt_3.5": "gpt-3.5-turbo", "gbt_4": "gpt-4"}
 
-    __api_key = ""
+    __api_key = "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"
 
     def __init__(self):
         self.__api_key = self.__api_key
@@ -28,7 +28,7 @@ def text_generation(content):
         model=model,
         messages=[{"role": "user", "content": content}]
     )
-    print(completion)
+    return completion
 
 
 # for key in completion:
@@ -51,4 +51,8 @@ def image_generation(prompt, size, number):
 # size = "1024x1024"
 # image_generation(prompt, size, 1)
 
-text_generation("can you tell me how to make a plan about exercise")
+
+input = input("请输入你要问的问题")
+result = text_generation(input)
+res = result["choices"][0]["message"]["content"]
+print(res)
