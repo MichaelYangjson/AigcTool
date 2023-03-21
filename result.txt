@@ -1,0 +1,21 @@
+{
+    "choices":[
+        {
+            "finish_reason":"stop",
+            "index":0,
+            "message":{
+                "content":"\n\n\u6211\u662f\u4e00\u4e2aAI\u673a\u5668\u4eba\uff0c\u6211\u53ef\u4ee5\u8bc6\u522b\u4e2d\u6587\u5e76\u4f7f\u7528\u4e2d\u6587\u4e0e\u60a8\u4ea4\u6d41\u3002",
+                "role":"assistant"
+            }
+        }
+    ],
+    "created":1679328306,
+    "id":"chatcmpl-6wCIMTQIFMt2xU5CFmnh7iyWEIXqh",
+    "model":"gpt-3.5-turbo-0301",
+    "object":"chat.completion",
+    "usage":{
+        "completion_tokens":25,
+        "prompt_tokens":16,
+        "total_tokens":41
+    }
+}
