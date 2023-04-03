@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+
+enum RetCode {
+  SUCCESS = 0;    // 成功
+  INVALID_PARAM = 1; // 非法参数
+  INTERNAL_ERR = 2; // 内部错误
+}
+
+// service 关键字定义提供的服务
+service AigcService {
+  // 定义一个调用chatgbt API的接口
+  rpc ChatApi (ChatApiReq) returns (ChatApiRes){
+  }
+
+}
+
+// chatApi请求
+message ChatApiReq {
+  int32 userIds = 1;
+  string model = 2;
+  int32 contentType = 3;
+  string apiKey = 4;
+  repeated Content content = 5;
+}
+
+message ChatApiRes {
+  RetCode code = 1;
+  string message = 2;
+  repeated Content data = 3;
+  Usage usage = 4;
+}
+
+message Content {
+  string role = 1;
+  string content = 2;
+}
+
+message Usage {
+  int32 completionTokens = 1;
+  int32 promptTokens = 2;
+  int32 totalTokens = 3;
+}

@@ -1,0 +1,10 @@
+2023-03-26T18:24:57.628739+0800 INFO ai_prom server start :8100
+2023-03-26T18:26:32.352710+0800 INFO ai_prom server start :8100
+2023-03-26T18:27:26.475340+0800 INFO start python grpc server====>
+2023-03-26T18:27:26.493363+0800 INFO ai_prom server start :8100
+2023-03-26T18:27:37.291313+0800 DEBUG start python grpc server====>
+2023-03-26T18:27:37.299385+0800 INFO ai_prom server start :8100
+2023-03-26T18:34:52.248853+0800 DEBUG start python grpc server====>
+2023-03-26T18:34:52.264849+0800 INFO ai_prom server start :8100
+2023-04-03T20:21:36.502880+0800 DEBUG start python grpc server====>
+2023-04-03T20:21:36.521112+0800 INFO ai_prom server start :8100
