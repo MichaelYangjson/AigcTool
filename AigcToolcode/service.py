@@ -5,7 +5,7 @@ import grpc
 from concurrent import futures
 import chatgbt
 import proto.aigc_tool_pb2_grpc as proto
-from AigcToolcode.proto import aigc_tool_pb2
+from proto import aigc_tool_pb2
 
 
 class Service(proto.AigcServiceServicer):
