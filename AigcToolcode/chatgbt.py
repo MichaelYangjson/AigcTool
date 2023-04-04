@@ -2,12 +2,13 @@ import openai
 import toml
 from loguru import logger
 
-api_key = toml.load("../config.toml")["chatgbt"]["api_key"]
+
+# api_key = toml.load("../config.toml")["chatgbt"]["api_key"]
 
 
 class ChatApi:
     models = {"gpt_3.5": "gpt-3.5-turbo", "gbt_4": "gpt-4"}
-    __api_key = api_key
+    __api_key = ""
 
     def __init__(self):
         self.__api_key = self.__api_key
