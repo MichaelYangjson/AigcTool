@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import os
+import sys
+
 from loguru import logger
 import grpc
 from concurrent import futures
 import chatgbt
 import proto.aigc_tool_pb2_grpc as proto
 from proto import aigc_tool_pb2
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, BASE_DIR)
 
 
 class Service(proto.AigcServiceServicer):
