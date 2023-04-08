@@ -89,4 +89,6 @@ def text_call(content, key):
     logger.info("text_call usage: {usage}, res: {res}", usage=usage, res=res)
     return usage, conversation_list
 
-# text_call("你是谁？", "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")
+
+text_call({"role": "assistant", "content": "who are you？"}, "")
+
