@@ -79,7 +79,7 @@ def image_generation(prompt, size, number):
 #         break
 #     else:
 #
-#         result,chat = chat_obj.text_generation(input_user, "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")
+#         result,chat = chat_obj.text_generation(input_user, "")
 #         res = result["choices"][0]["message"]["content"]
 #         print(res)
 
