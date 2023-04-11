@@ -28,5 +28,7 @@ from langchain.schema import HumanMessage
 # print(chain.run(input_language="English", output_language="French", text="I love programming."))
 
 
-chat = ChatOpenAI(streaming=True, callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]), verbose=True, temperature=0,openai_api_key="")
-resp = chat([HumanMessage(content="Write me a song about sparkling water.")])
+chat = ChatOpenAI(streaming=True, callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]), verbose=True,
+                  temperature=0, openai_api_key="")
+resp = chat([HumanMessage(content="Write me a song about dog.")])
+print(resp)
