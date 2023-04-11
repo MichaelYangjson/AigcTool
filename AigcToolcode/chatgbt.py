@@ -1,3 +1,5 @@
+import time
+
 import openai
 import toml
 from loguru import logger
@@ -90,5 +92,9 @@ def text_call(content, key):
     return usage, conversation_list
 
 
-text_call({"role": "assistant", "content": "who are you？"}, "")
-
+now = time.time()
+text_call({"role": "user", "content": "为什么chatgpt python调用api速度比较慢"},
+          "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")
+after = time.time()
+res=after - now
+print(res)
